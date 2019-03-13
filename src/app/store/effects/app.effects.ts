@@ -1,5 +1,5 @@
 import { Injectable } from '@angular/core';
-import { Actions, Effect } from '@ngrx/effects';
+//import { Actions, Effect } from '@ngrx/effects';
 
 
 
@@ -8,6 +8,6 @@ export class AppEffects {
 
 
 
-  constructor(private actions$: Actions) {}
+ // constructor(private actions$: Actions) {}
 
 }

@@ -17,7 +17,7 @@ import { HomeComponent } from './home/home.component';
     HomeComponent
   ],
   imports: [
-    BrowserModule,
+    BrowserModule.withServerTransition({ appId: 'serverApp' }),
     StoreModule.forRoot(reducers, { metaReducers }),
     TranslateModule.forRoot(),
     !environment.production ? StoreDevtoolsModule.instrument() : [],
