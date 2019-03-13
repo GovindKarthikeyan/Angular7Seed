@@ -1,6 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-
+import {TranslateModule} from '@ngx-translate/core'
 import { AppComponent } from './app.component';
 import { StoreModule } from '@ngrx/store';
 import { reducers, metaReducers } from './store/reducers';
@@ -19,6 +19,7 @@ import { HomeComponent } from './home/home.component';
   imports: [
     BrowserModule,
     StoreModule.forRoot(reducers, { metaReducers }),
+    TranslateModule.forRoot(),
     !environment.production ? StoreDevtoolsModule.instrument() : [],
     EffectsModule.forRoot([AppEffects, HomeEffects])
   ],
